@@ -202,6 +202,7 @@
     <Compile Include="Areas\Administracao\Controllers\AceTemplateAdmin\WidgetsController.cs" />
     <Compile Include="Areas\Administracao\Controllers\GenerosController.cs" />
     <Compile Include="Areas\Administracao\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Administracao\Controllers\MusicasController.cs" />
     <Compile Include="Areas\Administracao\Extensions\HtmlRequestHelper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -450,6 +451,11 @@
     <Content Include="Areas\Administracao\Views\Generos\Details.cshtml" />
     <Content Include="Areas\Administracao\Views\Generos\Edit.cshtml" />
     <Content Include="Areas\Administracao\Views\Generos\Index.cshtml" />
+    <Content Include="Areas\Administracao\Views\Musicas\Create.cshtml" />
+    <Content Include="Areas\Administracao\Views\Musicas\Delete.cshtml" />
+    <Content Include="Areas\Administracao\Views\Musicas\Details.cshtml" />
+    <Content Include="Areas\Administracao\Views\Musicas\Edit.cshtml" />
+    <Content Include="Areas\Administracao\Views\Musicas\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
