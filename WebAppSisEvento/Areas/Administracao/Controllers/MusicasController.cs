@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebAppSisEvento.Models;
 
-namespace WebAppSisEvento.Areas.Administracao.Controllers
+namespace Areas.Administracao.Controllers
 {
     [Authorize(Roles = "Administrador")]
     public class MusicasController : Controller
@@ -44,12 +44,9 @@ namespace WebAppSisEvento.Areas.Administracao.Controllers
             return View();
         }
 
-        // POST: Administracao/Musicas/Create
-        // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
-        // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MusicaId,Descricao,GeneroId")] Musica musica)
+        public ActionResult Create(Musica musica)
         {
             if (ModelState.IsValid)
             {
@@ -78,12 +75,9 @@ namespace WebAppSisEvento.Areas.Administracao.Controllers
             return View(musica);
         }
 
-        // POST: Administracao/Musicas/Edit/5
-        // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
-        // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MusicaId,Descricao,GeneroId")] Musica musica)
+        public ActionResult Edit(Musica musica)
         {
             if (ModelState.IsValid)
             {
